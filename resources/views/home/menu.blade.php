@@ -1,9 +1,9 @@
-<div class="container-fluid position-relative my-5 color-bg-second py-5">
-    <div class="container py-2">
-        <div class="menu-title justify-content-center d-flex pb-5">
+<div class="container-fluid  bg-light py-5">
+    <div class="container py-2" >
+        <div class="menu-title justify-content-center d-flex pb-5" data-aos="fade-up">
             <h3>Menu</h3>
         </div>
-        <div class="row">
+        <div class="row" data-aos="fade-up">
             <div class="col-lg-3 col-md-6">
                 <div class="menu">
                     <div class="menu-img">
@@ -55,7 +55,7 @@
             
         </div>
         <div class="justify-content-center d-flex py-4">
-            <button class="btn btn-voir-plus">Voir plus</button>
+            <a href="{{ route('menu') }}" class="btn btn-voir-plus">Voir plus</a>
         </div>
     </div>
 </div>

@@ -18,7 +18,9 @@
     @yield('moreCss')
 </head>
 <body>
-    
+    <div id="preloader">
+        <div class="loader"></div>
+    </div>
     <header>
         @include('partials.header')
     </header>
@@ -45,6 +47,11 @@
 			once: true,
 			mirror: false
 			})
+		});
+
+		var preloader = $('#preloader');
+		$(window).on('load', function () {
+			preloader.fadeOut('slow', function () { $(this).remove(); });
 		});
 	</script>
 	@yield('moreJs')

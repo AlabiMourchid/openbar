@@ -16,3 +16,6 @@ use Illuminate\Support\Facades\Route;
 Route::redirect('/accueil','/');
 
 Route::get('/', [App\Http\Controllers\HomeController::class,'accueil'])-> name('accueil');
+Route::get('/menu', [App\Http\Controllers\MenuController::class,'show'])-> name('menu');
+Route::get('/evenements', [App\Http\Controllers\EvenementController::class,'show'])-> name('evenement');
+Route::get('/evenements/details', [App\Http\Controllers\EvenementController::class,'details'])-> name('evenement-details');

@@ -6,6 +6,27 @@
 }
 
 @font-face {
+    font-family: 'Satisfy-Regular';
+    font-style: normal;
+    font-weight: 100;
+    src: url('../fonts/Satisfy-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'Montserrat-Bold';
+    font-style: normal;
+    font-weight: 100;
+    src: url('../fonts/montserrat/Montserrat-Bold.otf');
+}
+
+@font-face {
+    font-family: 'Roboto-Bold';
+    font-style: normal;
+    font-weight: 100;
+    src: url('../fonts/roboto/Roboto-Bold.ttf');
+}
+
+@font-face {
     font-family: 'Amaranth-Regular';
     font-style: normal;
     font-weight: 100;
@@ -26,10 +47,70 @@ body{
     color: var(--text-color-black);
     font-family: 'Amaranth-Regular', 'Montserrat-Regular', sans-serif;
     line-height: 1.2;
+    overflow-x: hidden;
+}
+
+a{
+    text-decoration: none;
+    color: var(--text-color-black);
+}
+
+a:hover{
+    color: var(--text-color-black);
+}
+
+.banner_btn_iner a:hover {
+    color: var(--hover-color)!important;
+    text-decoration: none;
+    -webkit-transition: .5s;
+    transition: .5s;
+}
+
+#preloader {
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 9999;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    background-color: #fff;
+}
+#preloader  .loader{
+    margin: auto;
+    height: 60px;
+    width: 60px;border-radius: 50%;
+    background: url('../images/logo/openbar.png') cover;
+    animation: ldrrotating 2000ms linear 0s infinite;
+}
+
+@keyframes ldrrotating{
+    0%{
+        transform: rotate(0deg)scale(1);
+    }
+    50%{
+        transform: rotate(180deg)scale(1.1);
+    }
+    100%{
+        transform: rotate(360deg)scale(1);
+    }
+}
+
+h1, h2, h3{
+    font-family: "Satisfy-Regular", sans-serif;
+    font-weight: bold;
+}
+
+.card-event-desc h1{
+    font-family: 'Amaranth-Bold';
 }
 
 .bg-color{
     background: #FFB800;
+}
+
+.text-color{
+    color: var(--hover-color);
 }
 
 .banner{
@@ -48,7 +129,6 @@ body{
 }
 
 .navbar-light .navbar-nav .nav-link.s-nav-link {
-    /* font-family: "Montserrat-Bold", sans-serif; */
     font-size: 15px;
     color: var(--text-color-black);
 }
@@ -65,6 +145,10 @@ body{
     color: var(--hover-color);
 }
 
+.navbar-light .navbar-nav .nav-link.s-nav-link.active{
+    color: var(--hover-color);
+}
+
 .banner .banner-img{
     position: absolute;
     bottom: 0;
@@ -73,15 +157,18 @@ body{
 }
 
 /***** ABOUT ******/
-
 .about-desc h3,.about-desc p{
     letter-spacing: 1.5px;
 }
 
+.about-content{
+    margin: 40px 0px;
+}
+
 .about-desc{
-    padding: 20px;
+    padding: 40px;
     text-align: justify;
-    line-height: 30px;
+    line-height: 25px;
 }
 
 .about-title h3{
@@ -114,16 +201,16 @@ body{
     color: var(--text-color-white);
 }
 
-.icone-cercle-bas {
+.icone-cercle-droit {
     position: absolute;
-    bottom: 200px;
-    right: -50px;
-    height: 150px;
+    bottom: 80px;
+    right: -90px;
+    height: 400px;
 }
 
-.icone-cercle-haut {
+.icone-cercle-gauche {
     position: absolute;
-    bottom: -20px;
+    bottom: -100px;
     left: -90px;
     height: 400px;
 }
@@ -140,18 +227,18 @@ body{
 
 /****MENU****/
 
-.color-bg-second .menu {
+.menu {
     text-align: center;
     margin-bottom: 80px;
     position: relative;
 }
 
-.color-bg-second .menu .menu-img{
+.menu .menu-img{
     overflow: hidden;
     border-radius: 10px;
 }
 
-.color-bg-second .menu .menu-info{
+.menu .menu-info{
     position: absolute;
     border-radius: 10px;
     bottom: -50px;
@@ -187,10 +274,8 @@ body{
 
 /****Event***/
 
-.upcoming-event .event-card{
-    border: 1px solid black;
-    margin-bottom: 20px;
-    padding: 20px;
+.upcoming-event{
+    background-color: #fffaf3;
 }
 
 .tr{
@@ -205,4 +290,361 @@ body{
 
 .upcoming-event .event-card span{
     margin-left: 49px;
+}
+
+.card-event{
+    width: 100%;
+    position: relative;
+    padding: 5px;
+    box-sizing: border-box;
+    color: #000;
+    background-clip: padding-box;
+    border: solid 1px transparent;
+    border-radius: 10px;
+    z-index: 1;
+}
+
+.card-event-img{
+    max-width: 100%;
+    height: 500px;
+    border-radius: 10px;
+}
+
+
+
+.card-event-desc h1,.card-event-desc p{
+    letter-spacing: 1.5px;
+}
+
+.card-event-desc{
+    padding: 40px;
+    text-align: justify;
+    line-height: 25px;
+}
+
+.card-event-desc h1{
+    font-size: 38px ;
+}
+
+
+.card-event-desc-date, .card-event-desc-price{
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.card-event-desc-price{ 
+    font-family: 'Montserrat-Bold', sans-serif;
+}
+
+.img-contact{
+    padding: 50px;
+}
+
+/**FOOTER****/
+
+.footer i{
+    color: var(--text-color-white);
+}
+
+.footer{
+    background: var(--text-color-black);
+    padding: 20px;
+    color: var(--text-color-white);
+}
+
+.footer .float-right a:hover{
+    text-decoration: none;
+}
+
+.footer .float-right i:hover{
+    color: var(--hover-color);
+}
+
+.banner_btn_iner{
+    position: relative;
+    display: inline-block;
+    -webkit-transition: .5s;
+    transition: .5s;
+    border-right: 1px solid transparent;
+}
+
+.banner_btn_iner:before {
+    width: 60px;
+    height: 1px;
+    position: absolute;
+    content: "";
+    top: 0;
+    border-radius: 5px;
+    z-index: -1;
+    /* background-color: #2c3033; */
+    background-color: var(--hover-color);
+    left: 0;
+    -webkit-transition: .5s;
+    transition: .5s;
+}
+
+.banner_btn_iner:after {
+    width: 60px;
+    height: 1px;
+    position: absolute;
+    content: "";
+    bottom: 0;
+    border-radius: 5px;
+    z-index: -1;
+    /* background-color: #2c3033; */
+    background-color: var(--hover-color);
+    left: 0;
+    -webkit-transition: .5s;
+    transition: .5s;
+}
+
+
+.btn_2 {
+    padding: 14px 0 14px 25px;
+    /* border-left: 1px solid #2c3033; */
+    border-left: 1px solid var(--hover-color);
+    position: relative;
+    display: inline-block;
+    font-size: 15px;
+    color: #1d272f;
+    text-transform: capitalize;
+    -webkit-transition: .5s;
+    transition: .5s;
+}
+
+.banner_btn_iner:hover:before, .banner_btn_iner:hover:after{
+    width: 100%;
+}
+
+.banner_btn_iner:hover {
+    border-right: 1px solid var(--hover-color);
+    -webkit-transition: .5s;
+    transition: .5s;
+    padding-right: 20px;
+}
+
+
+/***** MENU PAGE *****/
+.menu-banner, .event-banner{
+    position: relative;
+    z-index: 1;
+    text-align: center;
+    margin-bottom: 0!important;
+}
+
+.menu-banner-bg{
+    background: linear-gradient(rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.7)), url('../images/bar-cocktail-drink-pub-bottles-733203.jpg') repeat-y 0px 0px;
+    background-position: center;
+    background-size: cover;
+}
+
+.menu-banner-text, .event-banner-text{
+    height: 200px;
+    width: 100%;
+    display: table;
+}
+
+.menu-banner-text-content, .event-banner-text-content{
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.menu-banner-text-content h2, .event-banner-text-content h2{
+    color: #fff;
+    font-size: 45px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    text-transform: capitalize;
+}
+
+.content-bg{
+    background-color: #f6f5f1;
+}
+
+.menu-content{
+    padding: 100px 0px 90px;
+}
+
+.menu-content .row .col-lg-3{
+    padding: 20px;
+}
+
+/**** Evenements ****/
+
+.event-content-card .card-img-top img{
+    max-width: 100%;
+    height: 330px;
+}
+
+
+.event-content-card .card {
+    border-radius: 100px 0px 623px 77px / 0px 50px 128px 58px;
+}
+
+.event-content-card .card .card-body{
+    padding: 40px 30px;
+    border: 1px solid #e7e7e7;
+    border-radius: 100px 0px 623px 77px / 0px 50px 128px 58px;
+    background-color: #fff;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+}
+
+.btn-3{
+    display: inline-block;
+    font-size: 15px;
+    color: #1d272f;
+    text-transform: capitalize;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    position: relative;
+    z-index: 1;
+}
+
+
+.event-content-card .card:hover .card-body{
+    border: 1px solid transparent;
+    box-shadow: 0px 15px 30px rgb(115 113 127 / 10%);
+    background-color: #fff;
+}
+
+.event-content-card .card:hover .btn-voir-plus{
+    background-color: var(--hover-color);
+    color: var(--text-color-white);
+}
+
+.event-banner-bg{
+    background: linear-gradient(rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.7)), url('../images/event-image.jpeg') repeat-y 0px 0px;
+    background-position: center;
+    background-size: cover;
+}
+
+.banner-details{
+    height: 66vh;
+    max-height: inherit;
+    min-height: 500px;
+    overflow: hidden;
+    position: absolute;
+    top: 61px;
+    width: 100%;
+    z-index: -1;
+}
+
+.banner-details .banner-details-img img{
+    transform: translate(-50%,-50%);
+    filter: blur(50px) brightness(.9);
+    display: inline-block;
+    width: 200%;
+    top: 50%;
+}
+
+.banner-grid{
+    max-width: 1080px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.banner-event-grid{
+    box-shadow: 0px 1px 2px 0px rgb(115 113 127 / 10%);
+    position: relative;
+    margin-top: 0;
+    margin-bottom: 50px;
+    padding-top: 0;
+}
+
+.banner-event-grid .banner-event-grid-img img{
+    display: block;
+    width: 100%;
+    border-radius: 10px 10px 0px 0px;
+    height: 100%;
+    object-fit: cover;
+}
+
+.banner-event-grid-img{
+    height: 400px;
+    overflow-y: hidden;
+}
+
+@media only screen and (min-width: 1080px){
+    .banner-event-grid {
+        margin-top: 40px;
+    }
+}
+
+.content-event-grid{
+    background-color: var(--body-color);
+    padding-top: 50px;
+    padding-bottom: 50px;
+    padding-left: 50px;
+    line-height: 25px;
+}
+
+.reservation{
+    position: sticky;
+    background: var(--body-color);
+    top: 60px;
+    height: auto;
+    box-shadow: 0px 2px 5px 0px rgb(0 0 0 / 20%);
+    border-radius: 10px;
+    padding: 15px;
+    margin-bottom: 20px;
+    border: 2px solid var(--body-color);
+}
+
+.content-event-grid h1,.content-event-grid h3{
+    font-family: 'Amaranth-Regular';
+}
+
+.content-event-grid .date{
+    padding-top: 20px;
+}
+
+.content-event-grid .date p i{
+    font-size: 18px;
+    font-weight: 400;
+    padding-top: 10px;
+}
+
+
+.padding {
+    padding: 3rem
+}
+
+.owl-carousel .item {
+    margin: 3px
+}
+
+.owl-carousel .item img {
+    display: block;
+    width: 100%;
+    height: auto
+}
+
+.owl-carousel .item {
+    margin: 3px
+}
+
+.owl-carousel {
+        margin-bottom: 15px
+    }
+
+.owl-theme .owl-dots .owl-dot span {
+    background: #fff !important;
+}
+
+.owl-theme .owl-dots .owl-dot.active span {
+    background: var(--s-accent) !important;
+}
+
+.custom-trigger-left,
+.custom-trigger-right {
+    position: relative;
+    bottom: 292px;
+    z-index: 1000;
+    padding: 0px;
+}
+
+.custom-trigger-left:focus,
+.custom-trigger-right:focus {
+    box-shadow: 0 0 0 0.25rem transparent;
 }
