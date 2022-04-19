@@ -3,12 +3,12 @@
     <div class="container">
         <div class="about-content">
             <div class="row">
-                <div class="col-6" data-aos="fade-right">
+                <div class="col-lg-6 col-md-12" data-aos="fade-right">
                     <div class="pt-3 ">
                         <img src="{{ asset('images/about.png') }}" alt="" class="card-about-img d-block w-100">
                     </div>
                 </div>
-                <div class="col-6">
+                <div class="col-lg-6 col-md-12">
                     <div class="about-desc" >
                         <h3 data-aos="fade-left">Qui sommes nous?</h3>
                         <p data-aos="fade-up">Lorem Ipsum is simply dummy text of the printing 

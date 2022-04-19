@@ -18,7 +18,7 @@
             <div class="content-event-grid">
                 <div class="container">
                     <div class="row">
-                        <div class="col-lg-7">
+                        <div class="col-lg-7 col-md-6">
                             <h1>Holly Chill Resurection</h1>
                             <div class="date">
                                 <p><i class="fa fa-ticket"> 2000 <sup>FCFA</sup></i></p>
@@ -48,21 +48,15 @@
                             </div>
                             <br>
                             <h3>Sponsors/Partenaires</h3>
-                            <div class="col-12">
-                              <div class="owl-carousel owl-theme owlsponsors">
-                                <div class="item"><img src="{{ asset('images/sponsors/1.png') }}" alt=""></div>
-                                <div class="item"><img src="{{ asset('images/sponsors/2.png') }}" alt=""></div>
-                                <div class="item"><img src="{{ asset('images/sponsors/3.png') }}" alt=""></div>
-                                <div class="item"><img src="{{ asset('images/sponsors/4.png') }}" alt=""></div>
-                              </div>
-                              {{-- <div class="d-flex justify-content-center">
-                                <button class="btn custom-trigger-left activites-web owlactivitesBtnLeft"><img src="{{ asset('images/chevron-left.svg')}}" alt="prev button"></button>
-                                <button class="btn custom-trigger-right activites-web owlactivitesBtnRight"><img src="{{ asset('images/chevron-right.svg')}}" alt="next button"></button>
-                              </div> --}}
+                            <div class="row sponsors">
+                                <div class="col-lg-3 item bg-light"><img src="{{ asset('images/sponsors/1.png') }}" alt=""></div>
+                                <div class="col-lg-3 item bg-light"><img src="{{ asset('images/sponsors/2.png') }}" alt=""></div>
+                                <div class="col-lg-3 item bg-light"><img src="{{ asset('images/sponsors/3.png') }}" alt=""></div>
+                                <div class="col-lg-3 item bg-light"><img src="{{ asset('images/sponsors/4.png') }}" alt=""></div>
                             </div>
                         </div>
-                        <div class="offset-1 col-lg-4">
-                            <div class="reservation">
+                        <div class="offset-1 col-lg-4 col-md-5">
+                            <div class="reservation ">
                                 <div class="row">
                                   <div class="col-12">
                                     <select name="nbr-ticket" id="nbr-ticket" class="form-control">
@@ -98,7 +92,7 @@
                                 <div class="row">
                                   <div class="col-12">
                                     <p>Vous allez être redirigé vers l’interface sécurisée de Paybox pour acheter votre ticket.</p>
-                                    <button class="btn btn-voir-plus w-100" id ="btnAmount">Payer 2000 <sup>FCFA</sup></button>
+                                    <button class="btn btn-voir-plus w-100" id ="btnAmount">Payer 2000 FCFA</button>
                                   </div>
                                 </div>
                             </div>
@@ -142,6 +136,12 @@
 
         $('.owlactivitesBtnRight').click(function() {
           $(".owl-carousel").trigger('prev.owl.carousel');
+        });
+
+        $('#nbr-ticket').on('change',function(){
+          console.log('jjfj');
+          $nbr_ticket = $('#nbr-ticket').val();
+          $("#btnAmount").text('Payer ' +2000 * $nbr_ticket + ' FCFA');
         });
 
       });

@@ -7,12 +7,12 @@
 
         <div class="event-content">
             <div class="row ">
-                <div class="col-lg-6 col-md-6">
-                    <div class="card-event-desc py-5">
+                <div class="col-lg-6 col-md-12">
+                    <div class="card-event-desc card-event-desc-left">
                         <h1 data-aos="fade-right">Soiree B'4</h1>
                         <div data-aos="fade-right">
                             <p class="card-event-desc-price"><i class="fa fa-ticket"> 2000 <sup>FCFA</sup></i></p>
-                            <p class="py-2 card-event-desc-date"><i class="fa fa-clock-o"> 20/04/2022 à 13h</i></p>
+                            <p class="card-event-desc-date"><i class="fa fa-clock-o"> 20/04/2022 à 13h</i></p>
                             <p class="card-event-desc-date"><i class="fa fa-location-arrow"> Akpkakpa</i> </p>
                         </div>
                         <div data-aos="fade-up">
@@ -22,27 +22,27 @@
                                 it to make a type specimen book. It has survived not only five centuries, 
                                 but also the leap into electronic typesetting.</p>
     
-                            <button class="btn btn-voir-plus">Voir le détail</button>
+                            <a  href="{{ route('evenement-details') }}" class="btn btn-voir-plus">Voir le détail</a>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-6 col-md-6" data-aos="fade-left">
+                <div class="col-lg-6 col-md-12" data-aos="fade-left">
                     <div class="pt-3 card-event">
                         <img src="{{ asset('images/event2.jpg') }}" alt="" class="card-event-img d-block w-100">
                     </div>
                 </div>
             </div>
             <div class="row position-relative pt-3">
-                <div class="col-lg-6 col-md-6">
+                <div class="col-lg-6 col-md-12">
                     <div class="pt-3 card-event">
                         <img src="{{ asset('images/event3.jpg') }}" alt="" class="card-event-img d-block w-100">
                     </div>
                 </div>
-                <div class="col-lg-6 col-md-6">
-                    <div class="card-event-desc">
+                <div class="col-lg-6 col-md-12">
+                    <div class="card-event-desc card-event-desc-right">
                         <h1>Holly Chill Resurection</h1>
                         <p class="card-event-desc-price"><i class="fa fa-ticket"> 2000 <sup>FCFA</sup></i></p>
-                        <p class="py-2 card-event-desc-date"><i class="fa fa-clock-o"> 16/04/2022 à 13h</i></p>
+                        <p class="card-event-desc-date"><i class="fa fa-clock-o"> 16/04/2022 à 13h</i></p>
                         <p class="card-event-desc-date"><i class="fa fa-location-arrow"> Mariella Bora Bora</i> </p>
                         <p class="pt-2">Lorem Ipsum is simply dummy text of the printing 
                             and typesetting industry. Lorem Ipsum has been 

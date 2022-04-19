@@ -22,7 +22,7 @@
     <div class="container-fluid menu-content content-bg">
         <div class="container event-content-card py-3">
             <div class="row">
-                <div class="col-sm-6 col-lg-4">
+                <div class="col-md-6 col-lg-4 pt-5">
                     <a href="{{ route('evenement-details') }}">
                         <div class="card ">
                             <div class="card-img-top">
@@ -40,12 +40,12 @@
                                 <h2 class="text-center">Holly Chill Resurection</h2>
                                 <p class="p-3"><i class="fa fa-location-arrow"> Mariella Bora Bora</i> </p>
                                 <p  class="p-3">Was brean shed moveth day yielding tree yielding day were female and </p>
-                                <a class="btn btn-voir-plus m-3">Voir le détail</a>
+                                <a  href="{{ route('evenement-details') }}" class="btn btn-voir-plus m-3">Voir le détail</a>
                             </div>
                         </div>
                     </a>
                 </div>
-                <div class="col-sm-6 col-lg-4">
+                <div class="col-md-6 col-lg-4 pt-5">
                     <a href="{{ route('evenement-details') }}">
                         <div class="card ">
                             <div class="card-img-top">
@@ -68,7 +68,7 @@
                         </div>
                     </a>
                 </div>
-                <div class="col-sm-6 col-lg-4">
+                <div class="col-md-6 col-lg-4 pt-5">
                     <div class="card ">
                         <div class="card-img-top">
                             <img src="{{ asset('images/event2.jpg') }}" class="w-100" alt="">
@@ -89,10 +89,7 @@
                         </div>
                     </div>
                 </div>
-                
-            </div>
-            <div class="row pt-5">
-                <div class="col-sm-6 col-lg-4">
+                <div class="col-md-6 col-lg-4 pt-5">
                     <div class="card ">
                         <div class="card-img-top">
                             <img src="{{ asset('images/event2.jpg') }}" class="w-100" alt="">
