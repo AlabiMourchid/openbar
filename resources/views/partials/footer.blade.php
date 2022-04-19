@@ -7,12 +7,12 @@
             </div>
         </div>
         <div class="col-lg-6 menu-footer" >
-            <p>Lien Utiles</p>
+            <p><strong>Lien Utiles</strong></p>
             <div class="row">
-                <div class="col-lg-3">
+                <div class="col-lg-4">
                     <a href=""><span>Qui sommes-nous?</span></a>
                 </div>
-                <div class="col-lg-3">
+                <div class="col-lg-2">
                     <a href=""><span>Menu</span></a>
                 </div>
                 <div class="col-lg-3">
@@ -34,7 +34,7 @@
     </div>
     <hr>
     <div class="col-12  text-center">
-        <p>Copyright &copy <script>document.write(new Date().getFullYear())</script> <strong>Famouz Corporate.</strong> Tout droits réservés. 
+        <p>&copy <script>document.write(new Date().getFullYear())</script> <strong>Open Bar</strong> . Réalisé par <a href="" style="text-decoration: underline; color:blue" >Mourchid IDOHOU</a>. 
             <span class="float-right">
                 <span></span>
                 <a href=""><i class="fa fa-instagram pl-3"></i> </a>
