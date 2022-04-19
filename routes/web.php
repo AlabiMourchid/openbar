@@ -19,3 +19,5 @@ Route::get('/', [App\Http\Controllers\HomeController::class,'accueil'])-> name('
 Route::get('/menu', [App\Http\Controllers\MenuController::class,'show'])-> name('menu');
 Route::get('/evenements', [App\Http\Controllers\EvenementController::class,'show'])-> name('evenement');
 Route::get('/evenements/details', [App\Http\Controllers\EvenementController::class,'details'])-> name('evenement-details');
+
+Route::post('ticket/save',[App\Http\Controllers\TicketController::class, 'save'])->name('ticket_save');

@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>@yield('title')</title>
+	<meta name="csrf-token" content="{{ csrf_token() }}">
 
     <link rel="stylesheet" href="{{asset('css/bootstrap.min.css')}}"/>
 	<link rel="stylesheet" href="{{asset('css/font-awesome.css')}}">
@@ -35,6 +36,7 @@
     <script src="{{asset('js/jquery-3.6.0.js')}}"></script>
 	<script src="{{asset('js/bootstrap.min.js')}}"></script>
 	<script src="{{ asset('js/jquery-ui.js') }}"></script>
+    <script src="{{ asset('js/jquery.validate.min.js')}}"></script>
 	<script src="{{asset('js/aos.js')}}"></script>
 	<script src="{{asset('js/owl.carousel.min.js')}}"></script>
 	<script src="{{asset('js/bootstrap.bundle.min.js')}}"></script>
