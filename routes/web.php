@@ -21,3 +21,4 @@ Route::get('/evenements', [App\Http\Controllers\EvenementController::class,'show
 Route::get('/evenements/details', [App\Http\Controllers\EvenementController::class,'details'])-> name('evenement-details');
 
 Route::post('ticket/save',[App\Http\Controllers\TicketController::class, 'save'])->name('ticket_save');
+Route::get('ticket/validation',[App\Http\Controllers\TicketController::class, 'validation'])->name('ticket_save');

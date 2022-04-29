@@ -36,4 +36,8 @@ class TicketController extends Controller
             abort(500);
         }
     }
+    
+    public function validation(){
+        return view('validation');
+    }
 }

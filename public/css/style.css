@@ -6,6 +6,13 @@
 }
 
 @font-face {
+    font-family: 'Mirza-Regular';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/Mirza/Mirza-Regular.ttf');
+}
+
+@font-face {
     font-family: 'Halant-Regular';
     font-style: normal;
     font-weight: 400;
@@ -50,11 +57,15 @@
 }
 
 body{
-    font-size: 14px;
+    font-size: 16px;
     color: var(--text-color-black);
-    font-family: 'Halant-Regular', 'Montserrat-Regular', sans-serif;
+    font-family: 'Mirza-Regular', 'Montserrat-Regular', sans-serif;
     line-height: 1.2;
     overflow-x: hidden;
+}
+
+.navbar-nav li a{
+    font-family: 'Amaranth-Regular';
 }
 
 a{
@@ -709,6 +720,41 @@ h1, h2, h3{
         display: none;
     }
 
+    .footer .logo {
+        justify-content: center;
+        display: flex;
+    }
+
+    .footer .logo img{
+        width: 20%;
+    }
+    
+    .card-event-desc{
+        background: none;
+        box-shadow: none;
+        padding: 25px 0px;
+        margin-top: 50px;
+    }
+
+    .card-event-desc.card-event-desc-right{
+        margin-top: 20px;
+    }
+
+    .card-event-desc-left{
+        margin-right: 0px;
+    }
+
+    .card-event-desc-right{
+        margin-left: 0px;
+    }
+
+    .img-contact{
+        padding: 50px 10px;
+    }
+
+    .offset-1{
+        margin-left: 0px;
+    }
 }
 
 .content-event-grid{
@@ -789,4 +835,13 @@ h1, h2, h3{
 .custom-trigger-left:focus,
 .custom-trigger-right:focus {
     box-shadow: 0 0 0 0.25rem transparent;
+}
+
+.validation-content{
+    width: 300px;
+    box-shadow: 2px 5px 2px 0px rgb(0 0 0 / 10%);
+}
+
+.validation-content img{
+    width: 200px;
 }
