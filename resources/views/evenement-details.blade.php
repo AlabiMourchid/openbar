@@ -7,23 +7,23 @@
 @section('content')
     <div class="banner-details">
         <div class="banner-details-img">
-            <img src="{{ asset('images/event3.jpg') }}" alt="">
+            <img src="{{ asset("images/90'S_FASHIONN _banner.jpg") }}" alt="">
         </div>
     </div>
     <div class="container banner-grid">
         <div class="banner-event-grid">
             <div class="banner-event-grid-img">
-              <img src="{{ asset('images/event3.jpg') }}" alt="">
+              <img src="{{ asset("images/90'S_FASHIONN _banner.jpg") }}" alt="">
             </div>
             <div class="content-event-grid">
                 <div class="container">
                     <div class="row">
                         <div class="col-lg-7 col-md-6">
-                            <h1>Holly Chill Resurection</h1>
+                            <h2>90'S FASHION</h2>
                             <div class="date">
                                 <p><i class="fa fa-ticket"> 2000 <sup>FCFA</sup></i></p>
-                                <p><i class="fa fa-clock-o"> 16/04/2022 à 13h</i></p>
-                                <p><i class="fa fa-location-arrow"> Mariella Bora Bora</i> </p>
+                                <p><i class="fa fa-clock-o"> 15/05/2022 à 16h</i></p>
+                                <p><i class="fa fa-location-arrow"> Terrain de Ténis El Dorado</i> </p>
                             </div>
                             <p>
                                 Lorem Ipsum is simply dummy text of the printing 
@@ -38,16 +38,16 @@
                             but also the leap into electronic typesetting.
                             </p>
                             <br>
-                            <h3>DJ</h3>
+                            <h2>DJ</h2>
                             <div class="event-dj">
                                 <ul>
-                                    <li>Famouz DJ</li>
-                                    <li>Famouz DJ</li>
-                                    <li>Famouz DJ</li>
+                                    <li>FAMOUZ DJ</li>
+                                    <li>MRICK DJ</li>
+                                    <li>EL PADRE</li>
                                 </ul>
                             </div>
                             <br>
-                            <h3>Sponsors/Partenaires</h3>
+                            <h2>Sponsors/Partenaires</h2>
                             <div class="row sponsors">
                                 <div class="col-lg-3 item bg-light"><img src="{{ asset('images/sponsors/1.png') }}" alt=""></div>
                                 <div class="col-lg-3 item bg-light"><img src="{{ asset('images/sponsors/2.png') }}" alt=""></div>
